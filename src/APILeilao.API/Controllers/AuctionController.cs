@@ -4,14 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace APILeilao.API.Controllers
 {
-    [Route("[controller]")]
-    [ApiController]
-    public class AuctionController : ControllerBase
+    public class AuctionController : APILeilaoBaseController
     {
         [HttpGet]
         [ProducesResponseType(typeof(Auction), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public IActionResult GetLeilaoAtual()
+        public IActionResult GetCurrentAuction()
         {
             var useCase = new GetCurrentAuctionUseCase();
 

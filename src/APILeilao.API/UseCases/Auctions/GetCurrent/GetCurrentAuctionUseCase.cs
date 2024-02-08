@@ -10,7 +10,7 @@ namespace APILeilao.API.UseCases.Auctions.GetCurrent
         {
             var repository = new APILeilaoDbContext();
 
-            var today = new DateTime(2024, 01, 21); // Apenas um exemplo de data
+            var today = DateTime.Now;
 
             return repository
                 .Auctions

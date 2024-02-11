@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8C0C07D5-D18
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{29A12AE2-D260-4CFB-9768-606097DAE065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APILeilao.API", "src\APILeilao.API\APILeilao.API.csproj", "{0D202433-0EFC-4FE2-B088-2E928C97EEC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APILeilao.API", "src\APILeilao.API\APILeilao.API.csproj", "{0D202433-0EFC-4FE2-B088-2E928C97EEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases.Test", "tests\UseCases.Test\UseCases.Test.csproj", "{EF51B52D-A636-4C08-82D7-46CD56F3F53E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +21,17 @@ Global
 		{0D202433-0EFC-4FE2-B088-2E928C97EEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D202433-0EFC-4FE2-B088-2E928C97EEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D202433-0EFC-4FE2-B088-2E928C97EEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF51B52D-A636-4C08-82D7-46CD56F3F53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF51B52D-A636-4C08-82D7-46CD56F3F53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF51B52D-A636-4C08-82D7-46CD56F3F53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF51B52D-A636-4C08-82D7-46CD56F3F53E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0D202433-0EFC-4FE2-B088-2E928C97EEC5} = {8C0C07D5-D180-45FE-9320-02750DBEFCEA}
+		{EF51B52D-A636-4C08-82D7-46CD56F3F53E} = {29A12AE2-D260-4CFB-9768-606097DAE065}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17E703AB-2618-4B17-9018-122BEFFBD990}

@@ -5,6 +5,7 @@ using APILeilao.API.Repositories.DataAccess;
 using APILeilao.API.Services;
 using APILeilao.API.UseCases.Auctions.GetCurrent;
 using APILeilao.API.UseCases.Offers.CreateOffer;
+using APILeilao.API.UseCases.Offers.DeleteOffer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -48,6 +49,7 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddScoped<AuthenticationUserAttribute>();
 builder.Services.AddScoped<ILoggedUser, LoggedUser>();
 builder.Services.AddScoped<CreateOfferUseCase>();
+builder.Services.AddScoped<DeleteOfferUseCase>();
 builder.Services.AddScoped<GetCurrentAuctionUseCase>();
 builder.Services.AddScoped<IAuctionRepository, AuctionRepository>();
 builder.Services.AddScoped<IOfferRepository, OfferRepository>();

@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UseCases\Offers\NewFolder\**" />
+    <Content Remove="UseCases\Offers\NewFolder\**" />
+    <EmbeddedResource Remove="UseCases\Offers\NewFolder\**" />
+    <None Remove="UseCases\Offers\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
